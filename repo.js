@@ -2,7 +2,7 @@ var $ = require('jquery');
 function Repo(owner, repo) {
   this.owner = owner;
   this.name = repo;
-	this.stargazers_count = 0;
+	this.followers = 0;
 }
 Repo.prototype.fetch = function(){
   return $.ajax({
@@ -10,7 +10,7 @@ Repo.prototype.fetch = function(){
     method: 'get',
     dataType: 'json'
   }).then(function(data){
-      this.follower = data.stargazers_count;
+      this.followers = data.stargazers_count;
   }.bind(this));
 };
 module.exports = Repo;

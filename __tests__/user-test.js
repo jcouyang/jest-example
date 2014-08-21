@@ -5,7 +5,7 @@ describe('User Model', function(){
 		var $ = require('jquery');
 		var User = require('../user');
     user = new User('jcouyang');
-		$.ajax.mockReturnValue(require('./helper')({followers: 23}));
+		$.setAjaxReturn({followers: 23});
 	});
 	
   it('should populate properties with data from github api', function(){
