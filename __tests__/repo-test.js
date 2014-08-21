@@ -13,12 +13,3 @@ describe('Repo Model', function(){
 		expect(repo.followers).toBe(23);
   });
 });
-
-
-
-
-
-
-
-
-

@@ -9,10 +9,9 @@ describe('follower', function(){
 		follower = require('../follower');
 		user = new User('jcouyang');
     repo = new Repo('jcouyang', 'gira');
-		user.fetch.mockReturnValue(require('./helper')('dont care'));
 		user.name ='jcouyang';
 		user.followers = 20;
-		repo.fetch.mockReturnValue(require('./helper')('dont care'));
+		user.fetch.mockReturnValue($.Deferred().resolve('dont care'));
 		repo.name = 'gira';
 		repo.followers = 21;
 		document.body.innerHTML = '<div id="content"></div>';
