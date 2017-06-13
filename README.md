@@ -1,5 +1,5 @@
 
-Javascript 的测试, 不管在用 [jasmine](http://jasmine.github.io) 还是 [mocha](http://visionmedia.github.io/mocha/),
+Javascript 的测试, 不管在用 [jasmine](http://jasmine.github.io) 还是 [mocha](http://mochajs.org/),
 都是很头疼的事情. 但是自从有了 [jest](http://facebook.github.io/jest/), 一口气写7个测试, 腰也不疼了, 头也不疼了.
 
 只需要 3 个理由
